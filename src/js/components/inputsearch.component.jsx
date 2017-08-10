@@ -19,15 +19,16 @@ class InputSearch extends React.Component {
             queryParam: ""
         })
     }
+    
     render() {
         return (
-            <form className="form-inline">
+            <div className="form-inline">
                 <div className="form-group has-feedback">
                     <input type="text" className="form-control" value={this.state.queryParam} onChange={this.onChange}></input>
                     {this.state.queryParam && <span className="glypho" onClick={this.clearData}>x</span>}
                 </div>
-                <Link  to={`/search/${this.state.queryParam}`}><input  type="button" onSubmit={(e) => e.preventDefault()}  className="btn btn-info" value="Search" /></Link>
-            </form>
+                <Link  to={`/search/${this.state.queryParam}`}><input  type="button"  className="btn btn-info" value="Search" /></Link>
+            </div>
         )
     }
 }

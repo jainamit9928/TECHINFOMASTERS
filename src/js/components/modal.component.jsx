@@ -8,7 +8,6 @@ export default class Modal extends React.Component {
     }
   }
   render() {
-    console.log("component MODAL")
     if (this.props.isOpen === false)
       return null
     return (

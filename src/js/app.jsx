@@ -12,6 +12,7 @@ const App = () => (
         <nav>
           <NavBar />
         </nav>
+     
     <div className="row">
       <div className="col-md-12">
         <main>
@@ -19,7 +20,7 @@ const App = () => (
         </main>
       </div>
    </div>
-</div>
+   </div>
 
 
     )
